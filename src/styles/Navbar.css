@@ -33,6 +33,7 @@ span {
 .side {
 	color: #db6b97;
 	display: flex;
+	font-weight: 600;
 	flex-direction: row;
 	gap: 20px;
 	align-items: center;
