@@ -14,11 +14,11 @@
 }
 
 .footer {
-	height: 120px;
 	display: grid;
 	margin: 0 112.797px;
 	grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
 	grid-template-rows: 2fr 1fr;
+	border: 1px solid black;
 }
 
 .item4 {

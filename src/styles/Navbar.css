@@ -14,23 +14,27 @@
 }
 
 .navbar {
+	height: 72px;
+	width: 100vw;
+	box-shadow: 5px 0px 10px var(--grey);
+}
+.container {
 	display: flex;
 	flex-direction: row;
-
-	box-shadow: 5px 0px 10px var(--grey);
+	margin: 0 30px;
 }
 span {
 	color: black;
 	font-size: 48px;
 }
-.logo {
+.navbar .logo {
 	color: var(--pink);
 	font-weight: 800;
 	font-size: 48px;
 }
 
-.menu,
-.side {
+.navbar .menu,
+.navbar .side {
 	color: #db6b97;
 	display: flex;
 	font-weight: 600;
