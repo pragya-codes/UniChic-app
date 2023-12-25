@@ -14,16 +14,21 @@
 }
 
 .footer {
+	background-color: #000;
+	color: var(--grey);
 	height: 200px;
 	display: grid;
-	margin: 0 30px;
+	padding: 0 30px;
 	grid-template-columns: 1.5fr 1fr 1fr 1.5fr;
 	grid-template-rows: 2fr 1fr;
 	align-items: center;
 	font-size: 0.8rem;
-	border: 1px solid black;
 }
 
+h2 {
+	color: var(--pink);
+	padding: 10px 0;
+}
 .item4 button {
 	all: unset;
 
@@ -32,7 +37,11 @@
 	color: #fff;
 	border-radius: 20px;
 }
+
 .item5 {
-	/* margin: 20px auto; */
+	border-top: 1px solid var(--grey);
+	width: 300px;
+	padding-top: 10px;
 	grid-column: 1 / span 4;
+	text-align: center;
 }

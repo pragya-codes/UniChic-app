@@ -1,7 +1,7 @@
 function About() {
 	return (
 		<>
-			<div className="container">
+			<div className="container" style={{ height: '100vh' }}>
 				<div className="about">
 					<h2>ABOUT US.</h2>
 					<p>
