@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import '../styles/Product.css';
-function Product({ title, img }) {
+function Product({ title, img, price }) {
 	return (
 		<>
 			<ul className="product">
@@ -11,7 +12,7 @@ function Product({ title, img }) {
 					Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 					Inventore, voluptates!
 				</li> */}
-				<li className="price">Rs XXXX</li>
+				<li className="price">$ {price}</li>
 				<li>
 					<button className="btn">ADD TO CART</button>
 				</li>

@@ -16,10 +16,5 @@
 ul {
 	display: grid;
 	grid-template-columns: repeat(4, auto);
-	grid-template-rows: repeat(3, auto);
-	gap: 60px;
-}
-
-li {
-	align-items: center;
+	grid-gap: 20px;
 }

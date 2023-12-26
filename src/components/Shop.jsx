@@ -10,7 +10,7 @@ export default function Shop() {
 		fetch('https://fakestoreapi.com/products')
 			.then((res) => res.json())
 			.then((data) => setItem(data));
-		console.log(item);
+
 		return () => {
 			controller.abort();
 		};
@@ -21,7 +21,11 @@ export default function Shop() {
 			<ul>
 				{item.map((i) => (
 					<li key={i.id}>
-						<Product title={i.title} img={i.image} />
+						<Product
+							title={i.title}
+							img={i.image}
+							price={i.price}
+						/>
 					</li>
 				))}
 			</ul>
