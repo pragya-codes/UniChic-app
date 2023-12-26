@@ -14,6 +14,7 @@
 }
 
 .product {
+	border: 1px solid black;
 	margin: 100px auto;
 	height: 450px;
 	width: 250px;
@@ -29,7 +30,7 @@
 	box-shadow: 4px 4px 10px #d1d1d1, -4px -4px 10px #d1d1d1;
 }
 img {
-	height: 280px;
+	height: 270px;
 	width: 250px;
 }
 
@@ -37,13 +38,15 @@ img {
 	padding-left: 4px;
 	text-transform: uppercase;
 	font-weight: bold;
+	-webkit-line-clamp: 1;
+	overflow: hidden;
 }
 
-.desc {
+/* .desc {
 	padding-left: 4px;
 	color: var(--grey);
 	font-size: 0.8rem;
-}
+} */
 
 .price {
 	padding-left: 4px;
