@@ -6,9 +6,9 @@ export default function Footer() {
 				<div className="item1" id="item">
 					<h2>UniChic.</h2>
 					<p>
-						Lorem ipsum dolor sit amet consectetur, adipisicing
-						elit. Accusantium, assumenda saepe nobis nesciunt veniam
-						rerum.
+						UniChic caters to thoughtful shoppers who appreciate
+						unique designs and top quality pieces you just can not
+						find elsewhere.
 					</p>
 				</div>
 				<ul className="item2" id="item">

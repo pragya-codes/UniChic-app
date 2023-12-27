@@ -1,20 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
-
-:root {
-	--pink: #db6b97;
-	--grey: #737373;
-}
-
-* {
-	margin: 0;
-	padding: 0;
-	font-family: 'Poppins', sans-serif;
-	list-style: none;
-	box-sizing: border-box;
-}
-
 ul {
 	display: grid;
 	grid-template-columns: repeat(4, auto);
-	grid-gap: 20px;
+	grid-template-rows: repeat(4, 500px);
+	column-gap: 10px;
+}
+li {
+	height: fit-content;
+	width: fit-content;
 }
