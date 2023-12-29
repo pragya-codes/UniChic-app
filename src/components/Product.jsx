@@ -1,6 +1,15 @@
 /* eslint-disable react/prop-types */
+import { CartContext } from '../context/cartContext';
+import { useContext } from 'react';
 import '../styles/Product.css';
-function Product({ title, img, price }) {
+function Product({ item, title, img, price }) {
+	const { cart, setCart, setCartCount } = useContext(CartContext);
+
+	function handleClick() {
+		setCart([...cart, item]);
+		setCartCount((cartCount) => cartCount + 1);
+	}
+
 	return (
 		<>
 			<ul className="product">
@@ -14,7 +23,9 @@ function Product({ title, img, price }) {
 				</li> */}
 				<li className="price">$ {price}</li>
 				<li>
-					<button className="btn">ADD TO CART</button>
+					<button className="btn" onClick={handleClick}>
+						ADD TO CART
+					</button>
 				</li>
 			</ul>
 		</>
