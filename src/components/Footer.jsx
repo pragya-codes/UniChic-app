@@ -3,7 +3,7 @@ export default function Footer() {
 	return (
 		<>
 			<footer className="footer">
-				<div className="item1" id="item">
+				<div id="item1" className="item">
 					<h2>UniChic.</h2>
 					<p>
 						UniChic caters to thoughtful shoppers who appreciate
@@ -11,21 +11,21 @@ export default function Footer() {
 						find elsewhere.
 					</p>
 				</div>
-				<ul className="item2" id="item">
+				<ul id="item2" className="item">
 					<li>Home</li>
 					<li>Portfolio</li>
 					<li>About Us</li>
 					<li>Return Policy</li>
 				</ul>
-				<ul className="item3" id="item">
+				<ul id="item3" className="item">
 					<li>Terms & conditions</li>
 					<li>Privacy Policy</li>
 					<li>Resources</li>
 				</ul>
-				<div className="item4" id="item">
+				<div id="item4" className="item">
 					<button>Contact Us</button>
 				</div>
-				<div className="item5" id="item">
+				<div id="item5" className="item">
 					@UniChic. All Rights Reserved.
 				</div>
 			</footer>

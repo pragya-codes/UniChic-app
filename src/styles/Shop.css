@@ -1,9 +1,12 @@
 ul {
+	margin: 30px auto;
+	max-width: 1200px;
 	display: grid;
 	grid-template-columns: repeat(4, auto);
 	grid-template-rows: repeat(4, 500px);
 	column-gap: 10px;
 }
+
 li {
 	height: fit-content;
 	width: fit-content;
