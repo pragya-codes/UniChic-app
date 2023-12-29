@@ -4,9 +4,9 @@
 	box-shadow: 5px 0px 10px var(--grey);
 }
 .container {
+	height: 72px;
 	display: flex;
 	flex-direction: row;
-	margin: 0 30px;
 }
 span {
 	color: black;

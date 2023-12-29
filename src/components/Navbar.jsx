@@ -16,8 +16,10 @@ function Navbar() {
 					</ul>
 					<ul className="side">
 						<li>Login/Register</li>
-						<li>Cart</li>
-						<li>Like</li>
+						<li>
+							<i className=" fa-solid fa-cart-shopping fa-lg"></i>
+						</li>
+						<i className="fa-solid fa-heart fa-lg"></i>
 					</ul>
 				</div>
 			</div>
