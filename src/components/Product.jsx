@@ -1,13 +1,14 @@
 /* eslint-disable react/prop-types */
 import { CartContext } from '../context/cartContext';
-import { useContext, useEffect } from 'react';
+import { useContext, useState } from 'react';
 import '../styles/Product.css';
 function Product({ setWish, wish, item, title, img, price }) {
 	const { cart, setCart, setCartCount } = useContext(CartContext);
-
+	const [toggle, setToggle] = useState(true);
 	function handleClick() {
 		setCart([...cart, item]);
 		setCartCount((cartCount) => cartCount + 1);
+		setToggle(!toggle);
 	}
 
 	function handleWish(item) {
@@ -44,11 +45,13 @@ function Product({ setWish, wish, item, title, img, price }) {
 						onClick={() => handleWish(item)}
 					></i>
 				</li>
-				<li>
-					<button className="btn" onClick={handleClick}>
+				{toggle ? (
+					<button className="btn" onClick={() => handleClick(item)}>
 						ADD TO CART
 					</button>
-				</li>
+				) : (
+					<button className="btn">GO TO CART!</button>
+				)}
 			</ul>
 		</>
 	);
