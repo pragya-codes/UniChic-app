@@ -5,7 +5,7 @@ import CartContextProvider from '../context/cartContext';
 
 export default function Shop() {
 	const [item, setItem] = useState([]);
-
+	const [wish, setWish] = useState([]);
 	useEffect(() => {
 		const controller = new AbortController();
 		fetch('https://fakestoreapi.com/products')
@@ -16,6 +16,11 @@ export default function Shop() {
 			controller.abort();
 		};
 	}, []);
+
+	//to see on console as and when wish state gets changed
+	// useEffect(() => {
+	// 	console.log(wish);
+	// }, [wish]);
 
 	return (
 		<>
@@ -28,6 +33,8 @@ export default function Shop() {
 								title={i.title}
 								img={i.image}
 								price={i.price}
+								wish={wish}
+								setWish={setWish}
 							/>
 						</li>
 					))}

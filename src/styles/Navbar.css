@@ -4,7 +4,9 @@
 	box-shadow: 5px 0px 10px var(--grey);
 }
 .container {
+	margin: 0 auto;
 	height: 72px;
+	max-width: 1200px;
 	display: flex;
 	flex-direction: row;
 }
@@ -12,14 +14,14 @@ span {
 	color: black;
 	font-size: 48px;
 }
-.navbar .logo {
+.container .logo {
 	color: var(--pink);
 	font-weight: 800;
 	font-size: 48px;
 }
 
-.navbar .menu,
-.navbar .side {
+.container .menu,
+.container .side {
 	color: #db6b97;
 	display: flex;
 	font-weight: 600;

@@ -37,7 +37,11 @@ img {
 } */
 
 .price {
-	padding-left: 4px;
+	width: 245px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0;
 	color: var(--pink);
 	font-weight: bold;
 }
