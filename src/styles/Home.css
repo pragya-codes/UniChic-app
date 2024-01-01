@@ -1,0 +1,40 @@
+.hero {
+	margin: 10px auto;
+	display: flex;
+	flex-direction: row;
+	width: 1200px;
+	height: 90vh;
+}
+
+.hero img {
+	height: 100%;
+	width: auto;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	position: relative;
+	/* Center slide text vertically */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	object-fit: cover;
+}
+
+.explore {
+	position: relative;
+}
+
+.explore p,
+.swiper-slide p {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	z-index: 2;
+}
