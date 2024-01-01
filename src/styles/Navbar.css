@@ -3,25 +3,29 @@
 	width: 100vw;
 	box-shadow: 5px 0px 10px var(--grey);
 }
-.container {
-	margin: 0 auto;
+
+.navbar .container {
+	margin: auto;
 	height: 72px;
 	max-width: 1200px;
 	display: flex;
 	flex-direction: row;
 }
+
 span {
 	color: black;
 	font-size: 48px;
 }
+
 .container .logo {
 	color: var(--pink);
 	font-weight: 800;
 	font-size: 48px;
 }
 
-.container .menu,
-.container .side {
+.menu,
+.side {
+	margin: auto;
 	color: #db6b97;
 	display: flex;
 	font-weight: 600;

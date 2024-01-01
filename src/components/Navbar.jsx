@@ -1,5 +1,4 @@
 import '../styles/Navbar.css';
-
 function Navbar() {
 	return (
 		<>
