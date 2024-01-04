@@ -2,6 +2,7 @@
 import { CartContext } from '../context/cartContext';
 import { useContext, useState } from 'react';
 import '../styles/Product.css';
+import { Link } from 'react-router-dom';
 function Product({ setWish, wish, item, title, img, price }) {
 	const { cart, setCart, setCartCount } = useContext(CartContext);
 	const [toggle, setToggle] = useState(true);
@@ -50,7 +51,11 @@ function Product({ setWish, wish, item, title, img, price }) {
 						ADD TO CART
 					</button>
 				) : (
-					<button className="btn">GO TO CART!</button>
+					<button className="btn">
+						<Link to="/cart" className="btn-link">
+							GO TO CART!
+						</Link>
+					</button>
 				)}
 			</ul>
 		</>

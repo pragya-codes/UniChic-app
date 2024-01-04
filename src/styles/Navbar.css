@@ -20,7 +20,7 @@ span {
 .container .logo {
 	color: var(--pink);
 	font-weight: 800;
-	font-size: 48px;
+	font-size: 2.5rem;
 }
 
 .menu,

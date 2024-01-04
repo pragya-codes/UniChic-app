@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/Navbar.css';
 function Navbar() {
 	return (
@@ -5,13 +6,34 @@ function Navbar() {
 			<div className="navbar">
 				<div className="container">
 					<div className="logo">
-						UniChic<span>.</span>
+						<Link
+							to="/"
+							style={{ all: 'inherit', cursor: 'pointer' }}
+						>
+							UniChic<span>.</span>
+						</Link>
 					</div>
 					<ul className="menu">
-						<li>Home</li>
-						<li>Shop</li>
-						<li>About</li>
-						<li>Contact</li>
+						<li>
+							<Link to="/" className="link">
+								Home
+							</Link>
+						</li>
+						<li>
+							<Link to="/shop" className="link">
+								Shop
+							</Link>
+						</li>
+						<li>
+							<Link to="/about" className="link">
+								About
+							</Link>
+						</li>
+						<li>
+							<Link to="/contact" className="link">
+								Contact
+							</Link>
+						</li>
 					</ul>
 					<ul className="side">
 						<li>Login/Register</li>

@@ -3,6 +3,7 @@
 :root {
 	--pink: #db6b97;
 	--grey: #737373;
+	font-size: 0.9rem;
 }
 
 * {
@@ -11,4 +12,14 @@
 	font-family: 'Poppins', sans-serif;
 	list-style: none;
 	box-sizing: border-box;
+}
+
+.link,
+.btn-link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.link:hover {
+	color: black;
 }
