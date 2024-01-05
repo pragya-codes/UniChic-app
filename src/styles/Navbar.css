@@ -1,23 +1,18 @@
-.navbar {
+.container.c-nav {
 	height: 72px;
-	width: 100vw;
-	box-shadow: 5px 0px 10px var(--grey);
-}
-
-.navbar .container {
-	margin: auto;
-	height: 72px;
-	max-width: 1200px;
 	display: flex;
 	flex-direction: row;
 }
 
+.navbar {
+	box-shadow: 2px 2px 5px grey;
+}
 span {
 	color: black;
 	font-size: 48px;
 }
 
-.container .logo {
+.logo {
 	color: var(--pink);
 	font-weight: 800;
 	font-size: 2.5rem;

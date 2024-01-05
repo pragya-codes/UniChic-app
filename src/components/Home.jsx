@@ -14,7 +14,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 export default function Home() {
 	return (
 		<>
-			<div className="hero">
+			<div className="container c-home">
 				<div className="explore">
 					<p>Explore all &rarr;</p>
 					<img src="src\assets\explore.png" alt="explore page"></img>

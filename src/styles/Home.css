@@ -1,12 +1,9 @@
-.hero {
-	margin: 10px auto;
+.container.c-home {
 	display: flex;
 	flex-direction: row;
-	width: 1200px;
-	height: 90vh;
 }
 
-.hero img {
+.explore img {
 	height: 100%;
 	width: auto;
 }
@@ -22,6 +19,8 @@
 }
 
 .swiper-slide img {
+	height: 100%;
+	width: 100%;
 	display: block;
 	object-fit: cover;
 }

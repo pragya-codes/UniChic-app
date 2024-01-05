@@ -1,5 +1,8 @@
 .footer {
 	background-color: #000;
+}
+
+.footer .container {
 	color: var(--grey);
 	max-height: min-content;
 	display: grid;
