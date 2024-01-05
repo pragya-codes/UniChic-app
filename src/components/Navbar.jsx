@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { CartContext } from '../context/cartContext';
 import '../styles/Navbar.css';
 function Navbar() {
+	const { cartCount } = useContext(CartContext);
 	return (
 		<div className="navbar">
 			<div className="container c-nav">
@@ -37,7 +40,9 @@ function Navbar() {
 					{/* <li>Login/Register</li> */}
 					<li>
 						<Link to="/cart" className="link">
-							<i className=" fa-solid fa-cart-shopping fa-lg"></i>
+							<i className=" fa-solid fa-cart-shopping fa-lg">
+								{cartCount}
+							</i>
 						</Link>
 					</li>
 					<i className="fa-solid fa-heart fa-lg"></i>

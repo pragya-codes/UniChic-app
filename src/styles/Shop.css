@@ -1,5 +1,5 @@
 .container.c-shop {
-	padding: 50px 0;
+	padding: 1rem 2rem;
 	display: grid;
 	grid-template-columns: repeat(4, auto);
 	grid-template-rows: repeat(4, 500px);
@@ -9,4 +9,5 @@
 li {
 	height: fit-content;
 	width: fit-content;
+	place-self: center;
 }
