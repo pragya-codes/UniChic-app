@@ -2,8 +2,10 @@ import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { CartContext } from '../context/cartContext';
 import '../styles/Navbar.css';
+import { WishContext } from '../context/wishContext';
 function Navbar() {
 	const { cartCount } = useContext(CartContext);
+	const { wishCount } = useContext(WishContext);
 	return (
 		<div className="navbar">
 			<div className="container c-nav">
@@ -45,7 +47,7 @@ function Navbar() {
 							</i>
 						</Link>
 					</li>
-					<i className="fa-solid fa-heart fa-lg"></i>
+					<i className="fa-solid fa-heart fa-lg">{wishCount}</i>
 				</ul>
 			</div>
 		</div>

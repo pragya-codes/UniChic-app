@@ -8,6 +8,7 @@ import Shop from './components/Shop';
 import Home from './components/Home';
 import './styles/App.css';
 import Cart from './components/Cart';
+import WishContextProvider from './context/wishContext';
 
 const router = createBrowserRouter([
 	{
@@ -25,7 +26,9 @@ const router = createBrowserRouter([
 function App() {
 	return (
 		<CartContextProvider>
-			<RouterProvider router={router}></RouterProvider>
+			<WishContextProvider>
+				<RouterProvider router={router}></RouterProvider>
+			</WishContextProvider>
 		</CartContextProvider>
 	);
 }

@@ -1,6 +1,7 @@
 .container.c-home {
 	display: flex;
 	flex-direction: row;
+	padding: 1rem;
 }
 
 .explore img {
