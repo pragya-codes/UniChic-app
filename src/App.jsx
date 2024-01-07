@@ -6,7 +6,7 @@ import About from './components/About';
 
 import Shop from './components/Shop';
 import Home from './components/Home';
-
+import Contact from './components/Contact';
 import './styles/App.css';
 import Cart from './components/Cart';
 import WishContextProvider from './context/wishContext';
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
 				// },
 			},
 			{ path: '/about', element: <About /> },
-			// { path: '/contact', element: <Contact /> },
+			{ path: '/contact', element: <Contact /> },
 			{ path: '/cart', element: <Cart /> },
 		],
 	},
