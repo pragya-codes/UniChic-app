@@ -6,6 +6,7 @@ import About from './components/About';
 
 import Shop from './components/Shop';
 import Home from './components/Home';
+
 import './styles/App.css';
 import Cart from './components/Cart';
 import WishContextProvider from './context/wishContext';
@@ -16,7 +17,14 @@ const router = createBrowserRouter([
 		element: <Layout1 />,
 		children: [
 			{ index: true, element: <Home /> },
-			{ path: '/shop', element: <Shop /> },
+			{
+				path: '/shop',
+				element: <Shop />,
+				// children: {
+				// 	path: '/shop/:category',
+				// 	element: <FilteredShop />,
+				// },
+			},
 			{ path: '/about', element: <About /> },
 			// { path: '/contact', element: <Contact /> },
 			{ path: '/cart', element: <Cart /> },

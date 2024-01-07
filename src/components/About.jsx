@@ -1,10 +1,19 @@
 function About() {
 	return (
 		<>
-			<div className="container" style={{ height: '100vh' }}>
-				<div className="about">
-					<h2>ABOUT US.</h2>
-					<p>
+			<div
+				className="container"
+				style={{ height: '100vh', padding: '5rem' }}
+			>
+				<h2 style={{ paddingLeft: '5.5rem' }}>ABOUT US.</h2>
+				<div
+					className="about"
+					style={{
+						display: 'flex',
+						justifyContent: 'space-around',
+					}}
+				>
+					<p style={{ width: '50%', lineHeight: '2rem' }}>
 						UniChic caters to thoughtful shoppers who appreciate
 						unique designs and top quality pieces you just can not
 						find elsewhere. We are constantly curating fresh new
@@ -19,9 +28,16 @@ function About() {
 						outfit and accessories that make them stand-out from the
 						crowd.
 					</p>
+					<img
+						style={{
+							height: '100%',
+							objectFit: 'cover',
+						}}
+						src="src\assets\about.png"
+						alt="about image"
+						className="image"
+					></img>
 				</div>
-				<div className="stat"></div>
-				<div className="image"></div>
 			</div>
 		</>
 	);

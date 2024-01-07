@@ -35,7 +35,8 @@ export default function Home() {
 					className="mySwiper"
 				>
 					<SwiperSlide className="swiper-slide">
-						<p onClick={() => handleMen()}>Men &rarr;</p>
+						<p>Men &rarr;</p>
+
 						<img src="src\assets\shirts.jpg"></img>
 					</SwiperSlide>
 

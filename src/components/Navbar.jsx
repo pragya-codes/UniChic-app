@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { CartContext } from '../context/cartContext';
 import '../styles/Navbar.css';
 import { WishContext } from '../context/wishContext';
+
 function Navbar() {
 	const { cartCount } = useContext(CartContext);
 	const { wishCount } = useContext(WishContext);
