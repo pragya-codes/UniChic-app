@@ -3,9 +3,11 @@ function About() {
 		<>
 			<div
 				className="container"
-				style={{ height: '100vh', padding: '5rem' }}
+				style={{ height: '100vh', padding: '5rem', textAlign: 'left' }}
 			>
-				<h2 style={{ paddingLeft: '5.5rem' }}>ABOUT US.</h2>
+				<h2 style={{ paddingLeft: '5.5rem', textAlign: 'left' }}>
+					ABOUT US.
+				</h2>
 				<div
 					className="about"
 					style={{

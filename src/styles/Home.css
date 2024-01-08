@@ -38,6 +38,6 @@
 	z-index: 2;
 }
 
-p:hover {
+.c-home p:hover {
 	color: var(--pink);
 }

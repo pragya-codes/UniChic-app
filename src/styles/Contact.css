@@ -1,4 +1,4 @@
-.contact-form {
+.c-form {
 	margin: auto;
 	padding: 1.5rem 0;
 	display: flex;
@@ -11,10 +11,11 @@ form {
 	flex-direction: column;
 }
 
-h2 {
+.c-form h2 {
 	text-align: center;
 }
-p {
+
+.c-form p {
 	padding-bottom: 1.5rem;
 	text-align: center;
 }

@@ -1,8 +1,8 @@
 import '../styles/Contact.css';
 function Contact() {
 	return (
-		<div className="container c-form">
-			<div className="contact-form">
+		<div className="container">
+			<div className="c-form">
 				<h2>Contact Us</h2>
 				<p>
 					Feel free to contact us any time. We will get back to you as
