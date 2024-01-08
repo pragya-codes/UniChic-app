@@ -37,3 +37,7 @@
 	left: 50px;
 	z-index: 2;
 }
+
+p:hover {
+	color: var(--pink);
+}

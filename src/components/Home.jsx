@@ -6,17 +6,20 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import '../styles/Home.css';
-
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+import '../styles/Home.css';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
 	return (
 		<>
 			<div className="container c-home">
 				<div className="explore">
-					<p>Explore all &rarr;</p>
+					<Link to="/shop" className="link">
+						<p>Explore all &rarr;</p>
+					</Link>
 					<img src="src\assets\explore.png" alt="explore page"></img>
 				</div>
 				<Swiper
@@ -35,18 +38,30 @@ export default function Home() {
 					className="mySwiper"
 				>
 					<SwiperSlide className="swiper-slide">
-						<p>Men &rarr;</p>
+						<Link
+							to="/shop?category=men's clothing"
+							className="link"
+						>
+							<p>Men &rarr;</p>
+						</Link>
 
 						<img src="src\assets\shirts.jpg"></img>
 					</SwiperSlide>
 
 					<SwiperSlide className="swiper-slide">
-						<p>Women &rarr;</p>
+						<Link
+							to="/shop?category=women's clothing"
+							className="link"
+						>
+							<p>Women &rarr;</p>
+						</Link>
 						<img src="src\assets\women.jpg"></img>
 					</SwiperSlide>
 
 					<SwiperSlide className="swiper-slide">
-						<p>Jewllery &rarr;</p>
+						<Link to="/shop?category=jewelery" className="link">
+							<p>Jewllery &rarr;</p>
+						</Link>
 						<img src="src\assets\jewellery.jpg"></img>
 					</SwiperSlide>
 				</Swiper>

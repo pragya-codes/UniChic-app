@@ -10,8 +10,17 @@ form {
 	display: flex;
 	flex-direction: column;
 }
+
+h2 {
+	text-align: center;
+}
 p {
 	padding-bottom: 1.5rem;
+	text-align: center;
+}
+
+form > label {
+	font-size: 0.9rem;
 }
 
 form > input {
