@@ -1,23 +1,53 @@
 import { useContext } from 'react';
 import { CartContext } from '../context/cartContext';
-import Product from './Product';
+import { Link } from 'react-router-dom';
+import Wish from './Wish';
+import '../styles/cart.css';
 
 function Cart() {
-	const { cart } = useContext(CartContext);
+	const { cart, setCart, setCartCount } = useContext(CartContext);
+	function handleClick(id) {
+		const filtercart = cart.filter((item) => item.id !== id);
+		setCart(filtercart);
+		setCartCount((c) => c - 1);
+	}
 	console.log(cart);
 	return (
-		<ul>
-			{cart.map((i) => (
-				<li key={i.id}>
-					<Product
-						item={i}
-						title={i.title}
-						img={i.image}
-						price={i.price}
-					/>
-				</li>
-			))}
-		</ul>
+		<div className="container c-cart">
+			{cart && cart.length > 0 ? (
+				<ul className="cart">
+					{cart.map((i) => (
+						<li className="cart-li" key={i.id}>
+							<img src={i.image} alt="cart product image" />
+							<div>
+								<p>{i.title}</p>
+								<p>${i.price}</p>
+							</div>
+							<Wish item={i} />
+							<p
+								style={{ cursor: 'pointer' }}
+								onClick={() => handleClick(i.id)}
+							>
+								✖
+							</p>
+						</li>
+					))}
+				</ul>
+			) : (
+				<p className="emp-cart">
+					Cart is Empty! Buy from our{' '}
+					<Link
+						to="/shop"
+						style={{
+							textDecoration: 'none',
+							color: 'var(--pink)',
+						}}
+					>
+						Shop.
+					</Link>
+				</p>
+			)}
+		</div>
 	);
 }
 

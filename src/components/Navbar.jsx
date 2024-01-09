@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useContext } from 'react';
 import { CartContext } from '../context/cartContext';
-import '../styles/Navbar.css';
+import '../styles/navbar.css';
 import { WishContext } from '../context/wishContext';
 
 function Navbar() {
@@ -44,11 +44,14 @@ function Navbar() {
 					<li>
 						<Link to="/cart" className="link">
 							<i className=" fa-solid fa-cart-shopping fa-lg">
+								{' '}
 								{cartCount}
 							</i>
 						</Link>
 					</li>
-					<i className="fa-solid fa-heart fa-lg">{wishCount}</i>
+					<Link to="/wishpage" className="link">
+						<i className="fa-solid fa-heart fa-lg"> {wishCount}</i>
+					</Link>
 				</ul>
 			</div>
 		</div>

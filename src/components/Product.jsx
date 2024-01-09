@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { CartContext } from '../context/cartContext';
 import { useContext, useState } from 'react';
-import '../styles/Product.css';
+import '../styles/product.css';
 import { Link } from 'react-router-dom';
 import Wish from './Wish';
 function Product({ item, title, img, price }) {

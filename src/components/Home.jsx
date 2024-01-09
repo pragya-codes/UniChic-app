@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import '../styles/Home.css';
+import '../styles/home.css';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
