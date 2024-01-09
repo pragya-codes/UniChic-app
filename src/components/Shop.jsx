@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Product from './Product';
 import Spinner from './Spinner';
-import '../styles/Shop.css';
+import '../styles/shop.css';
 import { useSearchParams } from 'react-router-dom';
 
 export default function Shop() {
