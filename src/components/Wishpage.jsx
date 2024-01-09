@@ -8,9 +8,12 @@ function Wishpage() {
 	return (
 		<div className="container c-cart">
 			{wish && wish.length > 0 ? (
-				<ul className="container" style={{ transform: 'scale(0.7)' }}>
+				<ul className="container c-shop">
 					{wish.map((i) => (
-						<li key={i.id}>
+						<li
+							style={{ transform: 'scale(0.9)', padding: '0' }}
+							key={i.id}
+						>
 							<Product
 								item={i}
 								title={i.title}
