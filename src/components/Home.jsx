@@ -20,7 +20,7 @@ export default function Home() {
 					<Link to="/shop" className="link">
 						<p>Explore all &rarr;</p>
 					</Link>
-					<img src="src\assets\explore.png" alt="explore page"></img>
+					<img src="/assets/explore.png" alt="explore page"></img>
 				</div>
 				<Swiper
 					spaceBetween={30}
@@ -45,7 +45,7 @@ export default function Home() {
 							<p>Men &rarr;</p>
 						</Link>
 
-						<img src="src\assets\shirts.jpg"></img>
+						<img src="/assets/shirts.jpg"></img>
 					</SwiperSlide>
 
 					<SwiperSlide className="swiper-slide">
@@ -55,14 +55,14 @@ export default function Home() {
 						>
 							<p>Women &rarr;</p>
 						</Link>
-						<img src="src\assets\women.jpg"></img>
+						<img src="/assets/women.jpg"></img>
 					</SwiperSlide>
 
 					<SwiperSlide className="swiper-slide">
 						<Link to="/shop?category=jewelery" className="link">
 							<p>Jewllery &rarr;</p>
 						</Link>
-						<img src="src\assets\jewellery.jpg"></img>
+						<img src="/assets/jewellery.jpg"></img>
 					</SwiperSlide>
 				</Swiper>
 			</div>

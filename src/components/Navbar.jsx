@@ -52,6 +52,31 @@ function Navbar() {
 					<Link to="/wishpage" className="link">
 						<i className="fa-solid fa-heart fa-lg"> {wishCount}</i>
 					</Link>
+					<div className="wrapper">
+						<i className="fa-solid fa-bars fa-lg dropdown"></i>
+						<ul className="drplist">
+							<li>
+								<Link to="/" className="link">
+									Home
+								</Link>
+							</li>
+							<li>
+								<Link to="/shop" className="link">
+									Shop
+								</Link>
+							</li>
+							<li>
+								<Link to="/about" className="link">
+									About
+								</Link>
+							</li>
+							<li>
+								<Link to="/contact" className="link">
+									Contact
+								</Link>
+							</li>
+						</ul>
+					</div>
 				</ul>
 			</div>
 		</div>

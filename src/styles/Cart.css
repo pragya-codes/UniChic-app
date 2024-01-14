@@ -25,6 +25,7 @@ li.cart-li {
 .cart-li img {
 	height: 100%;
 	width: 30%;
+	object-fit: contain;
 }
 
 .emp-cart {
