@@ -1,5 +1,5 @@
 .container.c-nav {
-	height: 72px;
+	height: 4.5rem;
 	display: flex;
 	flex-direction: row;
 }
@@ -34,6 +34,6 @@ span {
 	display: flex;
 	font-weight: 600;
 	flex-direction: row;
-	gap: 30px;
+	gap: 1.5rem;
 	align-items: center;
 }

@@ -3,7 +3,12 @@ function About() {
 		<>
 			<div
 				className="container"
-				style={{ height: '100vh', padding: '5rem', textAlign: 'left' }}
+				style={{
+					height: '70vh',
+					overflow: 'scroll',
+					padding: '2rem',
+					textAlign: 'left',
+				}}
 			>
 				<h2 style={{ paddingLeft: '5.5rem', textAlign: 'left' }}>
 					ABOUT US.
@@ -15,7 +20,7 @@ function About() {
 						justifyContent: 'space-around',
 					}}
 				>
-					<p style={{ width: '50%', lineHeight: '2rem' }}>
+					<p style={{ width: '70%', lineHeight: '2rem' }}>
 						UniChic caters to thoughtful shoppers who appreciate
 						unique designs and top quality pieces you just can not
 						find elsewhere. We are constantly curating fresh new
@@ -35,7 +40,7 @@ function About() {
 							height: '100%',
 							objectFit: 'cover',
 						}}
-						src="src\assets\about.png"
+						src="/assets/about.png"
 						alt="about image"
 						className="image"
 					></img>

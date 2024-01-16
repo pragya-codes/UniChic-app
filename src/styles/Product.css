@@ -21,7 +21,7 @@ img {
 	width: 248px;
 }
 
-.title {
+.product .title {
 	height: 50px;
 	text-overflow: clip;
 	overflow: hidden;
@@ -36,8 +36,8 @@ img {
 	font-size: 0.8rem;
 } */
 
-.price {
-	width: 245px;
+.product li.price {
+	gap: 10rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
