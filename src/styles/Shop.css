@@ -1,8 +1,10 @@
 .container.c-shop {
+	margin: 3rem auto;
 	display: grid;
-	grid-template-columns: repeat(4, auto);
-	grid-template-rows: repeat(4, 40rem);
-	column-gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+	/* grid-template-rows: repeat(4, 40rem); */
+	gap: 2.5rem;
+	column-gap: 4rem;
 }
 
 .container.c-shop li {

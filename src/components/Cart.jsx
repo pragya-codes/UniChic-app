@@ -23,13 +23,18 @@ function Cart() {
 								<p>{i.title}</p>
 								<p>${i.price}</p>
 							</div>
-							<Wish item={i} />
-							<p
-								style={{ cursor: 'pointer' }}
-								onClick={() => handleClick(i.id)}
-							>
-								✖
-							</p>
+							<div>
+								<Wish item={i} />
+								<p
+									style={{
+										cursor: 'pointer',
+										marginTop: '1rem',
+									}}
+									onClick={() => handleClick(i.id)}
+								>
+									✖
+								</p>
+							</div>
 						</li>
 					))}
 				</ul>

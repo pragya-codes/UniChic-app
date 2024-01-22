@@ -134,4 +134,7 @@
 	.logo {
 		display: none;
 	}
+	.product {
+		transform: scale(0.8);
+	}
 }
